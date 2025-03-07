@@ -3,6 +3,11 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        """
+            Se tiene un arreglo de precios de acciones, se debe determinar el máximo beneficio que se puede obtener
+        :param prices: List[int] precios de acciones
+        :return: int: máximo beneficio
+        """
         minimum = prices[0]
         profit = 0
         for i in range(1, len(prices)):
