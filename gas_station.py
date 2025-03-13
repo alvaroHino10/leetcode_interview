@@ -13,7 +13,9 @@ class Solution:
         :return: int: Indice donde se puede completar el circuito
         """
         # Si el balance de la suma de gas y cost es menor a 0, no se puede completar el circuito desde ese indice y se
-        # recorre al siguiente indice, reiniciando el total de gas y distancia
+        # recorre al siguiente indice, reiniciando el total de gas y distancia.
+        # Se garantiza el recorrido si la suma de gas es mayor o igual a la suma de cost. Si no se cumple, se retorna -1
+        # directamente sin recorrer la lista.
         n = len(gas)
         index_i = 0
         total_gas = 0
